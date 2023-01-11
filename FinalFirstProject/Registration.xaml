@@ -1,0 +1,42 @@
+<Window x:Class="FinalFirstProject.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:FinalFirstProject"
+        mc:Ignorable="d"
+        Background="#991426"
+        Title="Registration" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.75*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="0.75*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="1" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" FontSize="15" FontFamily="Verdana" Foreground="Bisque">Приветствуем Вас на регистрации!<LineBreak/>Введите пожалуйста логин/пароль!</TextBlock>
+        <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
+            <Label Content="Login:" Target="{Binding ElementName=loginBox}" FontFamily="Verdana" Foreground="Bisque" />
+            <TextBox Name="loginBox" MaxLength="55" Height="30" FontSize="15" FontFamily="Verdana"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">
+            <Label Content="Password:" Target="{Binding ElementName=passwordBox}" FontFamily="Verdana" Foreground="Bisque"/>
+            <PasswordBox PasswordChar="*" Name="passwordBox" MaxLength="55" Height="30" FontSize="15" FontFamily="Verdana"/>
+        </StackPanel>
+        <Button Grid.Row="5" Grid.Column="1" MaxWidth="180" MinWidth="120" MaxHeight="40" MinHeight="30" Content="Зарегистрироваться" Background="#059923"  FontFamily="Verdana" Foreground="Bisque" Click="RegistrationNewUsers">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
