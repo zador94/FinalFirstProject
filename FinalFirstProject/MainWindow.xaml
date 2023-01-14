@@ -40,5 +40,6 @@
             </Button.Resources>
         </Button>
         <TextBlock Grid.Row="6" Grid.Column="0" x:Name="PointMouse" Foreground="Bisque" VerticalAlignment="Bottom"></TextBlock>
+        <TextBlock Grid.Row="0" Grid.Column="2" Foreground="Bisque" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="WhatIsIt">Что это такое?</TextBlock>
     </Grid>
 </Window>

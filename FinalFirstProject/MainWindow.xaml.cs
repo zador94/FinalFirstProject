@@ -60,5 +60,11 @@ namespace FinalFirstProject
             Point p = e.GetPosition(this);
             PointMouse.Text = $"X:{p.X.ToString()} Y: {p.Y.ToString()}";
         }
+
+        private void WhatIsIt(object sender, MouseButtonEventArgs e)
+        {
+            WhatIsIt whatIsIt = new WhatIsIt();
+            whatIsIt.Show();
+        }
     }
 }

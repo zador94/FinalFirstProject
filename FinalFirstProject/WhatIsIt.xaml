@@ -1,0 +1,23 @@
+<Window x:Class="FinalFirstProject.WhatIsIt"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:FinalFirstProject"
+        mc:Ignorable="d"
+        Title="WhatIsIt" MaxHeight="250" Width="800" Background="#991426">
+    <Grid ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" VerticalAlignment="Center" TextAlignment="Center" FontSize="15" FontFamily="Verdana" Foreground="Bisque" >Это информационная система,<LineBreak/>предназначенная для автоматизации управления<LineBreak/> складскими процессами и инфраструктурой склада в целом. <LineBreak/>На начальном этапе пользователю предлагаю зарегистрироваться.<LineBreak/> После пройденной авторизации вы можете, как добавить новые записи о поступивших продуктах, <LineBreak/>так и посмотреть на то что уже добавлено в самом приложении.</TextBlock>
+        <Button Grid.Row="1" Grid.Column="0" MaxWidth="180" MinWidth="120" MaxHeight="40" MinHeight="30" Content="Ok" Background="#059923"  FontFamily="Verdana" Foreground="Bisque" Click="EndApp" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

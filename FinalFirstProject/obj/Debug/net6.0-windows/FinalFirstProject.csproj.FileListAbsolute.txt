@@ -42,3 +42,5 @@ C:\Users\andru\RiderProjects\FinalFirstProject\FinalFirstProject\obj\Debug\net6.
 C:\Users\andru\RiderProjects\FinalFirstProject\FinalFirstProject\obj\Debug\net6.0-windows\MainWindowStock.baml
 C:\Users\andru\RiderProjects\FinalFirstProject\FinalFirstProject\obj\Debug\net6.0-windows\StockWriteInTable.g.cs
 C:\Users\andru\RiderProjects\FinalFirstProject\FinalFirstProject\obj\Debug\net6.0-windows\StockWriteInTable.baml
+C:\Users\andru\RiderProjects\FinalFirstProject\FinalFirstProject\obj\Debug\net6.0-windows\WhatIsIt.g.cs
+C:\Users\andru\RiderProjects\FinalFirstProject\FinalFirstProject\obj\Debug\net6.0-windows\WhatIsIt.baml
